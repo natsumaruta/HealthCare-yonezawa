@@ -38,6 +38,8 @@ class AuthViewModel: ObservableObject {
             DispatchQueue.main.async {
                 if result != nil, error == nil {
                     self?.isAuthenticated = true
+                } else {
+                    print("error:",error)
                 }
             }
         }

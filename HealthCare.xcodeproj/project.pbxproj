@@ -12,6 +12,8 @@
 		7E65056E2D6CB8A500687AF0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7E65056D2D6CB8A500687AF0 /* FirebaseDatabase */; };
 		7E6505702D6CB8A500687AF0 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 7E65056F2D6CB8A500687AF0 /* FirebaseMessaging */; };
 		7E6505722D6CB8A500687AF0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7E6505712D6CB8A500687AF0 /* FirebaseStorage */; };
+		7EB8A6452D7216F6000B2133 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 7EB8A6442D7216F6000B2133 /* DGCharts */; };
+		7EB8A6482D721849000B2133 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7EB8A6472D721849000B2133 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +47,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E6505702D6CB8A500687AF0 /* FirebaseMessaging in Frameworks */,
+				7EB8A6482D721849000B2133 /* Alamofire in Frameworks */,
 				7E65056E2D6CB8A500687AF0 /* FirebaseDatabase in Frameworks */,
 				7E6505612D6C919D00687AF0 /* Kingfisher in Frameworks */,
 				7E6505722D6CB8A500687AF0 /* FirebaseStorage in Frameworks */,
+				7EB8A6452D7216F6000B2133 /* DGCharts in Frameworks */,
 				7E65056C2D6CB8A500687AF0 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +100,8 @@
 				7E65056D2D6CB8A500687AF0 /* FirebaseDatabase */,
 				7E65056F2D6CB8A500687AF0 /* FirebaseMessaging */,
 				7E6505712D6CB8A500687AF0 /* FirebaseStorage */,
+				7EB8A6442D7216F6000B2133 /* DGCharts */,
+				7EB8A6472D721849000B2133 /* Alamofire */,
 			);
 			productName = HealthCare;
 			productReference = 7E4662772D6AEBEA00332DE7 /* HealthCare.app */;
@@ -128,6 +134,8 @@
 			packageReferences = (
 				7E65055F2D6C919D00687AF0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				7E65056A2D6CB8A500687AF0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7EB8A6432D7216F6000B2133 /* XCRemoteSwiftPackageReference "Charts" */,
+				7EB8A6462D721849000B2133 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7E4662782D6AEBEA00332DE7 /* Products */;
@@ -291,11 +299,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthCare/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "登録する画像を取得するためにフォトライブラリにアクセスします。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,11 +331,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthCare/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "登録する画像を取得するためにフォトライブラリにアクセスします。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +391,22 @@
 				minimumVersion = 11.8.1;
 			};
 		};
+		7EB8A6432D7216F6000B2133 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		7EB8A6462D721849000B2133 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -406,6 +434,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7E65056A2D6CB8A500687AF0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		7EB8A6442D7216F6000B2133 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EB8A6432D7216F6000B2133 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		7EB8A6472D721849000B2133 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EB8A6462D721849000B2133 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
